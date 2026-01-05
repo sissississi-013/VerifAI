@@ -1,0 +1,8 @@
+{
+  "name": "VerifAI",
+  "description": "Real-time AI fact-checking agent that listens to live meetings, verifies claims using Google Search, and generates instant data visualizations.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
