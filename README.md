@@ -1,18 +1,11 @@
 # VerifAI
 
-**Demo Video**: 
-<video controls width="600">
-    <source src="https://youtu.be/ZQ2el5iI3Yw"
-    <!-- Fallback text for browsers that don't support the video tag -->
-    Your browser does not support the video tag.
-</video>
+**Demo Video**: https://youtu.be/ZQ2el5iI3Yw
 
-
-![Try it out!]([https://img.shields.io/badge/license-MIT-blue.svg](https://aistudio.google.com/apps/drive/1-bl2SoDHWMrV2ykjxi4hmtfwfO_nejJL?fullscreenApplet=true&showPreview=true&showAssistant=true))
-
+Try it out: https://aistudio.google.com/apps/drive/1-bl2SoDHWMrV2ykjxi4hmtfwfO_nejJL?fullscreenApplet=true&showPreview=true&showAssistant=true
 
 :)
-<img width="1920" height="1080" alt="Infosession Slides Spring 26&#39;" src="https://github.com/user-attachments/assets/1a05c24c-b4cc-44e5-ace9-c16b639630fd" />
+<img width="192" height="108" alt="Infosession Slides Spring 26&#39;" src="https://github.com/user-attachments/assets/1a05c24c-b4cc-44e5-ace9-c16b639630fd" />
 **Real-time AI fact-checking agent for live meetings and video streams.**
 
 VerifAI listens to your voice in real-time, detects factual claims, performs instant background research using Google Search, and overlays verification cards with data visualizations directly on your camera feed.
