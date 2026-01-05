@@ -2,14 +2,13 @@
 
 **Demo Video**: 
 <video controls width="600">
-    <source src="https://youtu.be/ZQ2el5iI3Yw">
-
+    <source src="https://youtu.be/ZQ2el5iI3Yw"
     <!-- Fallback text for browsers that don't support the video tag -->
     Your browser does not support the video tag.
 </video>
 
 
-![Try it out :)]([https://img.shields.io/badge/license-MIT-blue.svg](https://aistudio.google.com/apps/drive/1-bl2SoDHWMrV2ykjxi4hmtfwfO_nejJL?fullscreenApplet=true&showPreview=true&showAssistant=true))
+![Try it out!]([https://img.shields.io/badge/license-MIT-blue.svg](https://aistudio.google.com/apps/drive/1-bl2SoDHWMrV2ykjxi4hmtfwfO_nejJL?fullscreenApplet=true&showPreview=true&showAssistant=true))
 
 
 :)
