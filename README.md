@@ -1,20 +1,68 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# VerifAI
 
-# Run and deploy your AI Studio app
+**Real-time AI fact-checking agent for live meetings and video streams.**
 
-This contains everything you need to run your app locally.
+VerifAI listens to your voice in real-time, detects factual claims, performs instant background research using Google Search, and overlays verification cards with data visualizations directly on your camera feed.
 
-View your app in AI Studio: https://ai.studio/apps/drive/1-bl2SoDHWMrV2ykjxi4hmtfwfO_nejJL
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![Status](https://img.shields.io/badge/status-preview-orange.svg)
 
-## Run Locally
+## Key Features
 
-**Prerequisites:**  Node.js
+*   **Always-On Listening:** Utilizes **Gemini Live (Multimodal Live API)** to continuously monitor speech for testable claims without wake words.
+*   **Instant Verification:** Triggers **Gemini 3.0 Flash** with **Google Search Grounding** to verify statements in seconds.
+*   **Dynamic Visualization:** Automatically generates verify/debunk cards with interactive **Recharts** (Bar, Line, Pie) for statistical data.
+*   **Camera Overlay:** Draggable, semi-transparent UI cards designed for video conferencing overlays.
+*   **Fact Library:** Sidebar history of all verified claims with source links.
 
+## Tech Stack
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+*   **Frontend:** React 19, TypeScript, Tailwind CSS
+*   **AI & Logic:** Google GenAI SDK (`@google/genai`)
+*   **Models:** 
+    *   *Detection:* `gemini-2.5-flash-native-audio-preview` (Live API)
+    *   *Research:* `gemini-3-flash-preview` (Search Tool)
+*   **Visuals:** Recharts, Lucide React
+
+## Getting Started
+
+### Prerequisites
+*   Node.js (v18+)
+*   A Google AI Studio API Key (Paid tier required for search/live features).
+
+### Installation
+
+1.  **Clone the repository**
+    ```bash
+    git clone https://github.com/yourusername/verifai.git
+    cd verifai
+    ```
+
+2.  **Install dependencies**
+    ```bash
+    npm install
+    ```
+
+3.  **Set up Environment Variables**
+    Create a `.env` file in the root directory:
+    ```env
+    VITE_API_KEY=your_google_ai_studio_api_key
+    ```
+    *(Note: Ensure your bundler exposes this key as `process.env.API_KEY` or `import.meta.env.VITE_API_KEY`)*
+
+4.  **Run the App**
+    ```bash
+    npm run dev
+    ```
+
+## Usage
+
+1.  Allow camera and microphone permissions.
+2.  Click the **Microphone** icon to go **LIVE**.
+3.  Speak natural sentences containing facts (e.g., *"The global population grew by 1% last year"*).
+4.  Watch the agent detect the claim and pop up a verification card.
+5.  Drag cards to organize your view or open the **Library** to review sources.
+
+## License
+
+MIT License. See [LICENSE](LICENSE) for details.
